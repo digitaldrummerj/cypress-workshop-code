@@ -1,11 +1,11 @@
 /// <reference types="cypress" />
-describe('02-adding-items', () => {
+describe('02-answer', () => {
   beforeEach(() => {
     cy.visit('localhost:3000');
     // cy.visit('/');
   });
 
-  it('loads', () => {
+  it('2. loads', () => {
     cy.contains('h1', 'todos');
   });
 
