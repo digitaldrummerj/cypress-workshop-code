@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+<<<<<<< HEAD
 describe('A11y Eample', () => {
   it('Test HomePage', () => {
     cy.visit('/');
@@ -6,3 +7,5 @@ describe('A11y Eample', () => {
     cy.checkA11y();
   });
 });
+=======
+>>>>>>> master
