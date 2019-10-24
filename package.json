@@ -47,5 +47,8 @@
       "assert",
       "expect"
     ]
+  },
+  "devDependencies": {
+    "@percy/cypress": "2.2.0"
   }
 }
