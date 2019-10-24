@@ -15,18 +15,8 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands';
-import 'cypress-axe';
-import '@percy/cypress';
-// Alternatively you can use CommonJS syntax:
-// require('./commands')
-
-// optionally, load Cypress Halloween color theme
-// https://www.cypress.io/blog/2018/10/11/halloween-theme/
-// require('cypress-dark/src/halloween')
-
-// require('cypress-pipe')
-// require('cypress-plugin-snapshots/commands')
-// require('cypress-failed-log')
+// import 'cypress-axe';
+// import '@percy/cypress';
 
 // load commands for code coverage
 // require('@cypress/code-coverage/support')
