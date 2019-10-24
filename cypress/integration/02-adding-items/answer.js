@@ -11,7 +11,7 @@ describe('02-answer', () => {
 
   it('starts with zero items', () => {
     cy.get('li.todo').should('have.length', 0);
-    cy.get('li.todo').should('be.empty');
+    cy.get('li.todo').should('not.exist');
   });
 
   it('adds two items', () => {
@@ -37,7 +37,7 @@ describe('02-answer', () => {
       addItem(`item ${k}`);
     }
     // check number of items
-    cy.get('li.todo').should('have.length', 5);
+    cy.get('li.todo').should('have.length', 7);
   });
 
   it('can mark items as completed', () => {
