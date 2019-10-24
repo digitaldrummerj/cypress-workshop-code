@@ -1,6 +1,8 @@
 /// <reference types="cypress" />
 /// <reference path="./custom-commands.d.ts" />
+
 import { resetData, visitSite } from '../../support/hooks'
+describe('07-answer', () => {
 
 beforeEach(resetData)
 beforeEach(visitSite)
@@ -73,3 +75,4 @@ it('passes when object gets new property', () => {
     .should('not.be.undefined')
     .and('equal', 'bar')
 })
+});
