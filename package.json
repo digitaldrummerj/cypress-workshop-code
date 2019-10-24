@@ -49,6 +49,8 @@
     ]
   },
   "devDependencies": {
+    "axe-core": "3.4.0",
+    "cypress-axe": "0.5.1",
     "@percy/cypress": "2.2.0"
   }
 }
