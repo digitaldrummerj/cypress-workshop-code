@@ -47,5 +47,9 @@
       "assert",
       "expect"
     ]
+  },
+  "devDependencies": {
+    "axe-core": "3.4.0",
+    "cypress-axe": "0.5.1"
   }
 }
