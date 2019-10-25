@@ -2,10 +2,9 @@
 describe('02-answer', () => {
   beforeEach(() => {
     cy.visit('localhost:3000');
-    // cy.visit('/');
   });
 
-  it('2. loads', () => {
+  it('loads', () => {
     cy.contains('h1', 'todos');
   });
 

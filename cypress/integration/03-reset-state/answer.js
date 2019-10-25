@@ -1,11 +1,22 @@
 /// <reference types="cypress" />
-describe('04', () => {
+describe('04-answer', () => {
+  const isLocalHost = () => Cypress.config('baseUrl').includes('localhost');
+
+  if (isLocalHost()) {
+    // we can reset data only when running locally
+    beforeEach(function resetData() {
+      cy.request('POST', '/reset', {
+        todos: [],
+      });
+
+      // Note: we are using json-server-reset - https://github.com/bahmutov/json-server-reset#readme
+    });
+  }
+
   beforeEach(() => {
-    // application should be running at port 3000
-    // and the "localhost:3000" is set as "baseUrl" in "cypress.json"
     cy.visit('/');
   });
-  it('4. loads', () => {
+  it('loads', () => {
     cy.contains('h1', 'todos');
   });
   /**
@@ -20,10 +31,6 @@ describe('04', () => {
     addItem('second item');
     cy.get('li.todo').should('have.length', 2);
   });
-
-  // Refactor 1:  Only reset if on localhost
-  // Hint 1: check if Cypress baseUrl includes localhost
-  // Hint 2: if localhost then run beforeEach
 
   // Best practices
   // reset state before each test

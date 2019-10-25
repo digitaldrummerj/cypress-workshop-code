@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 // Note: the tests we are about to write are NOT resetting the previously added Todo items. Delete the Todo items before each test manually.  We will reset the previously saved Todo items in section "4 Reset State".
 describe('02', () => {
-  it('2. loads', () => {
+  it('loads', () => {
     // application should be running at port 3000
     cy.visit('localhost:3000');
     cy.contains('h1', 'todos');

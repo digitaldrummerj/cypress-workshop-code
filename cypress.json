@@ -1,6 +1,6 @@
 {
   "baseUrl": "http://localhost:3000",
-  "ignoreTestFiles": ["*.d.ts"],
+  "ignoreTestFiles": ["**/0*/*.js", "**/answer.js", "*.d.ts"],
   "env": {},
   "$schema": "https://on.cypress.io/cypress.schema.json"
 }
